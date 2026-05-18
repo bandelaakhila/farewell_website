@@ -1,97 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Senior Farewell Memories</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Cinzel:wght@400;600&family=Parisienne&family=Cormorant+Upright:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Italiana&family=Dancing+Script:wght@400;600&family=Satisfy&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="page-sparkles" aria-hidden="true"></div>
-    <div class="container">
-        <header class="header">
-            <div class="header-content">
-                <h1 class="main-title">Farewell Memories</h1>
-                <p class="subtitle">A Journey Through Our Time Together</p>
-            </div>
-        </header>
 
-        <main class="main-content">
-            <section class="hero-section">
-                <div class="hero-content">
-                    <h2>Celebrating Our Seniors</h2>
-                    <p>Watch the memorable moments we've shared together</p>
-                    <div class="video-container">
-                        <video id="memoriesVideo" controls poster="placeholder.jpg">
-                            <source src="farewell-memories.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="video-overlay" id="videoOverlay">
-                            <div class="sparkle-container"></div>
-                            <div class="play-button">
-                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8 5v14l11-7z" fill="white"/>
-                                </svg>
-                            </div>
-                            <p>✨ Our Farewell Journey ✨</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="info-section">
-                <div class="info-content">
-                    <h3>About This Farewell</h3>
-                    <p>This video compilation captures the precious moments, laughter, and memories we've created together during our time here. Each clip represents a story, a friendship, and a milestone in our journey.</p>
-                    
-                    <div class="stats">
-                        <div class="stat-item">
-                            <span class="stat-number" id="daysCount">0</span>
-                            <span class="stat-label">Days Together</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" id="memoriesCount">0</span>
-                            <span class="stat-label">Memories Created</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="message-section">
-                <div class="message-content">
-                    <h3>Memories We'll Cherish Forever</h3>
-                    <p>Remember the laughter in the hallways, the late-night study sessions, the shared dreams, and the silent understandings. Each moment we spent together became a treasure in our hearts.</p>
-                    <p>The inside jokes that only we understood, the celebrations that felt like festivals, the support during tough times, and the joy in each other's success - these are the threads that wove our beautiful story.</p>
-                    <p>As we step into different paths, these memories will be our compass, guiding us back to the warmth of friendship whenever we need it most.</p>
-                    <div class="signature">
-                        <p>Forever grateful for every moment,</p>
-                        <p>Your Friends</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="credits-section">
-                <div class="credits-content">
-                    <div class="footer-credits">
-                        <p>© 2024 Senior Farewell. Made with love and memories.</p>
-                        <p>Thank you for making our journey unforgettable!</p>
-                    </div>
-                    <div class="credit-names-small">
-                        With Love Shaik Shafiya · Tumu Akhila · Vengala Sushma · Shaik Abeeda
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="footer-content">
-                <p>Scan the QR code on your farewell card to revisit these moments anytime.</p>
-            </div>
-        </footer>
+    <div class="video-wrapper">
+        <video id="memoriesVideo" controls autoplay  playsinline>
+            <source src="assets/videos/farewell.mp4" type="video/mp4">
+        </video>
     </div>
-
     <script src="script.js"></script>
+
 </body>
 </html>
